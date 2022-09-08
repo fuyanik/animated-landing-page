@@ -26,6 +26,7 @@
 
 
   .illüst{
+    z-index: 1;
     position: relative;
      display: flex;
     background-position: center;
@@ -35,6 +36,7 @@
     height: auto;
     z-index: 2;
     animation: logoAnim 2s;
+    border: 1px solid red;
 
     
   
