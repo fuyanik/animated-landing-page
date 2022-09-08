@@ -1,0 +1,295 @@
+
+.Navbar {
+ top: 0px;
+  position: absolute;
+  z-index: 99999999999999999999999999999999999999;
+    display: flex;
+    width: 100%;
+    height: 85px;
+    justify-content: space-between;
+     position: fixed;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .navbar-hover-help{
+    left: 250px;
+    top: 30px;
+    width: 80px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0);
+    cursor: pointer;
+  
+    position: absolute;
+  }
+  
+  .logom{
+    left: 45px;
+   top: 2px;
+    position: relative;
+    display: flex;
+    width: 90px;
+  }
+  .navbar-items {
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: -14%;
+    display: flex;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.944);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    gap: 25px;
+    top: 4px;
+    right: 01%;
+  }
+
+  .navbar-li {
+    position: relative;
+    display: flex;
+    list-style: none;
+    transition: 300ms;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+  }
+
+
+  .navbar-li::after{
+    content: "";
+    position: absolute;
+    background-color: #ec7b7b;
+    height: 0.1rem;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+
+
+.navbar-li:hover::after{
+  width: 100%;
+
+}
+
+
+
+.navbar-button {
+  top: px;
+ position: relative;
+ right: 5%;
+ cursor: pointer;
+ display: flex;
+ height: 42px;
+ width: 152px;
+ background-color: #8976f7;
+ align-self: center;
+ justify-self: flex-end;
+ border-radius: 35px;
+
+ color: white;
+ justify-content: center;
+ align-items: center;
+ font-family: "Poppins", sans-serif;
+ letter-spacing: 2PX;
+ font-weight: 600;
+ font-size: 13px;
+}
+ 
+ 
+
+.navbar-dropdown{
+ 
+  display: none;
+}
+
+.navbar-dropdown-hover{
+  top:  63px;
+  left: 160px;
+  position:  absolute;
+  width: 1050px;
+  height: 150px;
+  background-color: #092542;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-top: 1px solid var(--pink);
+  justify-content: flex-start;
+  padding-left: 1px;
+  animation: nav-dropdown-hover 400ms ease-out 0ms forwards;
+  visibility: hidden;
+  height: 0px;
+}
+
+@keyframes nav-dropdown-hover {
+  0%{
+    visibility: hidden;
+    height: 0px;
+  }
+  100%{
+  visibility: visible;
+    height: 300px;
+  }
+  
+}
+
+.dropdown-items{
+
+ opacity: 0;
+ 
+
+}
+.dropdown-item-hover{
+animation: dropdown-hovero 150ms ease-in 300ms forwards;
+opacity: 0;
+z-index: 999999999999999999999999999999999999999;
+}
+
+@keyframes dropdown-hovero{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+
+.dropdown-main-items{
+  width: 1045px;
+  height: 100%;
+  display: flex;
+
+}
+.dropdown-image{
+  left: 12px;
+  bottom: -2px;
+  position: relative;
+  height: 286px;
+  width: 240px;
+  background-size: cover;
+  background-position: center;
+  
+  border-radius: 15px;
+  background-color: rgba(54, 9, 252, 0);
+ 
+}
+
+
+.dropdown-divider{
+
+  color: rgba(255, 255, 255, 0.499);
+  transform:  rotate(90deg);
+  position: absolute;
+  left: 150px;
+  top: 50%;
+
+}
+
+.dropdown-item-line{
+
+  top: -9px;
+  left: 52px;
+ 
+  display: flex;
+  width: 160px;
+  height: auto;
+
+  position: relative;
+}
+
+
+
+.dropdown-head{
+  bottom: 12px;
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.dropdown-head::before{
+  content: "";
+  position: absolute;
+  background-color: var(--purple);
+  height: 1.2px;
+  width: 90px;
+  left: 0;
+  bottom: 220px;
+  transition: 0.4s;
+}
+
+.dropdown-item-line ul {
+  position: relative;
+  top: 25px;
+  right: 114px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  gap: 1px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+cursor: pointer;
+
+}
+
+
+
+
+.dropdown-item-line li {
+  position: relative;
+  display: flex;
+  list-style: none;
+  transition: 300ms;
+  cursor: pointer;
+
+  letter-spacing: 1px;
+  
+}
+
+
+.dropdown-item-line li::after{
+  content: "";
+  position: absolute;
+  background-color: #ec7b7b;
+  height: 0.1rem;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.4s;
+  
+}
+
+
+.dropdown-item-line li:hover::after{
+width: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+ 
+ 
+ 
+ 
+
